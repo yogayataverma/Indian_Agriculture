@@ -1,20 +1,20 @@
-Indian Agriculture Data Analytics
+** Indian Agriculture Data Analytics **
 This project utilizes TypeScript and React to perform analytics on Indian agriculture data obtained from the National Data and Analytics Platform, NITI Aayog. The goal is to aggregate and display information in two tables using Mantine v7 for UI components.
 
-Table 1: Crops Production Summary
+* Table 1: Crops Production Summary *
 This table displays the crop with maximum and minimum production for each year between 1950 and 2020.
 
-Table 2: Crops Average Yield and Cultivation Area
+* Table 2: Crops Average Yield and Cultivation Area *
 This table shows the average yield (in Kg/Ha) and average cultivation area (in Ha) for each crop between 1950 and 2020.
 
-Installation and Setup
+* Installation and Setup *
 Clone the repository:
 
 bash
 Copy code
-git clone <repository_url>
-cd <project_directory>
-Install dependencies:
+git clone https://github.com/yogayataverma/Indian_Agriculture.git
+cd  indian-agriculture-analytics
+* Install dependencies: *
 Ensure you have Yarn installed. If not, you can install it from Yarn Installation.
 
 bash
@@ -27,10 +27,12 @@ Copy code
 yarn start
 This will start the development server and automatically open the application in your default browser.
 
-Screenshots
+* Screenshots *
+![image](https://github.com/yogayataverma/Indian_Agriculture/assets/63913693/fd24a5d0-182f-4aaa-b472-4018db743910)
 
+![image](https://github.com/yogayataverma/Indian_Agriculture/assets/63913693/d77f918b-84d0-476a-b6bb-c0288b129a01)
 
-Folder Structure
+* Folder Structure *
 markdown
 Copy code
 - src/
@@ -58,4 +60,4 @@ This project adheres strictly to using TypeScript and React via CRA, with Yarn a
 The tables are designed to display accurate calculations for maximum, minimum, average yield, and average cultivation area for each crop over the specified years.
 
 Feedback
-For any questions or feedback, please contact [your-email@example.com].
+For any questions or feedback, please contact [yogayatajugnu@gmail.com].
