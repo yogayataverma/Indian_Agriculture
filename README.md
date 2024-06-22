@@ -13,7 +13,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/yogayataverma/Indian_Agriculture.git
-cd indian-agriculture-analytics
+cd indian-agriculture-analytics ```
 
 #### **Install dependencies:**
 Ensure you have Yarn installed. If not, you can install it from Yarn Installation.
@@ -21,11 +21,13 @@ Ensure you have Yarn installed. If not, you can install it from Yarn Installatio
 ```bash
 Copy code
 yarn install
+```
 Run the project:
 
 ```bash
 Copy code
 yarn start
+```
 This will start the development server and automatically open the application in your default browser.
 
 #### **Screenshots**
