@@ -19,9 +19,8 @@ cd indian-agriculture-analytics
 #### **Install dependencies:**
 Ensure you have Yarn installed. If not, you can install it from Yarn Installation.
 
-Copy Code
-
 ```bash
+Copy Code
 yarn install
 ```
 Run the project:
