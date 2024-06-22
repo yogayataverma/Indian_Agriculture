@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+Indian Agriculture Data Analytics
+This project utilizes TypeScript and React to perform analytics on Indian agriculture data obtained from the National Data and Analytics Platform, NITI Aayog. The goal is to aggregate and display information in two tables using Mantine v7 for UI components.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table 1: Crops Production Summary
+This table displays the crop with maximum and minimum production for each year between 1950 and 2020.
 
-## Available Scripts
+Table 2: Crops Average Yield and Cultivation Area
+This table shows the average yield (in Kg/Ha) and average cultivation area (in Ha) for each crop between 1950 and 2020.
 
-In the project directory, you can run:
+Installation and Setup
+Clone the repository:
 
-### `npm start`
+bash
+Copy code
+git clone <repository_url>
+cd <project_directory>
+Install dependencies:
+Ensure you have Yarn installed. If not, you can install it from Yarn Installation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+bash
+Copy code
+yarn install
+Run the project:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+bash
+Copy code
+yarn start
+This will start the development server and automatically open the application in your default browser.
 
-### `npm test`
+Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Folder Structure
+markdown
+Copy code
+- src/
+  - components/
+    - AnalyticsTables.tsx
+  - data/
+    - agricultureData.ts (sample data)
+  - utils/
+    - aggregation.ts
+- public/
+  - index.html
+- README.md
+Implementation Details
+Data Handling: The data is imported from agricultureData.ts, where it is processed using functions in aggregation.ts to compute required aggregates.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React Components: AnalyticsTables.tsx renders two tables using Mantine v7 for UI components. Data is fetched and aggregated using React hooks (useMemo) and then displayed using react-table.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+TypeScript: Strongly typed with interfaces defined for data structures (AggregatedData, CropSummary) and functions (aggregateTable1Data, aggregateTable2Data).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Code Quality: Follows modular structure, with clear comments where necessary to explain complex logic.
 
-### `npm run eject`
+Notes
+This project adheres strictly to using TypeScript and React via CRA, with Yarn as the package manager. No additional libraries like Bootstrap, jQuery, or Lodash are used to maintain simplicity and reduce unnecessary dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The tables are designed to display accurate calculations for maximum, minimum, average yield, and average cultivation area for each crop over the specified years.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feedback
+For any questions or feedback, please contact [your-email@example.com].
